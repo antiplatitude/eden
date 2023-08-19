@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eden",
+	"version": "${version}",
+	"name": "Eden",
+	"description": "Eden pre-alpha",
+	"authors": [
+		"Antiplatitude"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/eden/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.antiplatitude.eden.Eden"
+		],
+		"client": [
+			"net.antiplatitude.eden.EdenClient"
+		],
+		"fabric-datagen": [
+          "net.antiplatitude.eden.EdenDataGenerator"
+		]
+	},
+	"mixins": [
+		"eden.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
